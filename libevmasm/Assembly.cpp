@@ -850,7 +850,7 @@ Assembly::optimiseInternal(OptimiserSettings const& _settings, std::set<size_t> 
 	std::cerr << "---- BEGIN ----\n";
 	for (auto& CS: m_codeSections)
 	{
-		std::cerr << CS.items << "\n";
+		std::cerr << CS.items.size() << " | " << CS.items << "\n";
 	}
 
 	std::cerr << "---- SUB BEGIN ----\n";
@@ -1003,7 +1003,7 @@ Assembly::optimiseInternal(OptimiserSettings const& _settings, std::set<size_t> 
 	std::cerr << "---- OPTIMIZED ----\n";
 	for (auto& CS: m_codeSections)
 	{
-		std::cerr << CS.items << "\n";
+		std::cerr << CS.items.size() << " | " << CS.items << "\n";
 	}
 	std::cerr << "---- END ----\n";
 
